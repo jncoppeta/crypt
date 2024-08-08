@@ -13,7 +13,7 @@ That's it! You're ready to go now.
 ## Running the App
 1. cd into init
 ```bash
-cd programer/init
+cd crypt/init
 ```
 2. Run the compose file with the build option
 ```
