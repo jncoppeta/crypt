@@ -1,0 +1,7 @@
+fastapi==0.112.0
+uvicorn==0.30.3
+cryptography==3.4.8
+pydantic==2.8.2
+python-dotenv==1.0.1
+SQLAlchemy==2.0.31
+psycopg2-binary==2.9.6
