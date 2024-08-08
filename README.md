@@ -2,9 +2,30 @@
 Crypt is a simple locally run secrets manager with no designated frontend. The purpose of this is to provide a secure and simple way to store and access secrets with simple RBAC baked in.
 
 
-## Getting Started
-do this to use this jawn
+## Installation & Setup
 
+1. Clone the repository
+```bash
+git clone https://github.com/jncoppeta/crypt.git
+```
+That's it! You're ready to go now.
+
+## Running the App
+1. cd into init
+```bash
+cd programer/init
+```
+2. Run the compose file with the build option
+```
+docker-compose up --build
+```
+(note: wait until the api starts)
+
+3. Visit the site [here](http://localhost:8000/docs)!
+
+4. Once you get to the site, navitage to the `/api/v1/user/admin` route and run it to generate yourself an admin user. Only one admin user is allowed at a time. From here, you can now create additional power users or use the admin itself. Just remember to pass in the token every every authentication header as `Bearer <token value>`.
+
+(p.s. public are private keys are regenerated on every restart of the build. remove `python3 keygen.py` from the script `entrypoint.sh` to stop this. data is also saved in a docker volume by default.)
 
 ## Features
 ### API Functionality
